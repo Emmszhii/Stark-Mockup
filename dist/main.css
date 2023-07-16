@@ -507,6 +507,20 @@ h6 {
   border: 1px solid #381fd1;
 }
 
+.card {
+  padding: 2rem;
+  background-color: #f3f2fc;
+  border-radius: 1rem;
+}
+.card h4 {
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+.card a {
+  width: 100%;
+  text-align: center;
+}
+
 .library {
   padding: 5rem 0;
 }
@@ -514,7 +528,7 @@ h6 {
   display: grid;
   display: grid;
   grid-template-columns: 0.7fr 2fr;
-  grid-gap: 1rem;
+  grid-gap: 5rem;
 }
 .library__nav .form__group {
   position: relative;
@@ -538,6 +552,10 @@ h6 {
 .library__nav .form__group input:focus + i {
   color: #381fd1;
 }
+.library__nav .card p {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
 .library ul.library__lists {
   width: 100%;
   padding: 2.5rem 0;
@@ -547,14 +565,22 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.5s ease-in-out;
 }
 .library ul.library__lists li a:hover {
+  color: #381fd1;
+}
+.library ul.library__lists li span {
+  transition: 0.5s ease-in-out;
+}
+.library ul.library__lists li span.active {
   color: #381fd1;
 }
 .library ul.library__lists li .fa-chevron-down {
   transition: 0.5s ease-in-out;
 }
 .library ul.library__lists li .fa-chevron-down.active {
+  color: #381fd1;
   transform: rotate(180deg);
 }
 .library ul.sub__list {
@@ -567,4 +593,70 @@ h6 {
 }
 .library ul.sub__list li a {
   padding-left: 4rem;
+}
+.library__content__item {
+  display: none;
+}
+.library__content__item h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #11284b;
+}
+.library__content__item:not(:first-child) {
+  padding-top: 6rem;
+}
+.library__content__item.active {
+  display: block;
+}
+.library__content__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.library__content__header a {
+  font-family: "RobotoMono", "sans-serif";
+  text-decoration: underline;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #381fd1;
+  font-weight: 900;
+}
+.library__content__body {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.library__content__lists ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding-top: 2rem;
+}
+.library__content__list {
+  padding: 4rem 2rem;
+}
+.library__content__list img {
+  width: 3.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbcbcd;
+}
+.library__content__list.card {
+  background-color: transparent;
+  border: 1px solid #cbcbcd;
+}
+.library__content__list h5 {
+  font-size: 1.7rem;
+  color: #381fd1;
+}
+.library__content__list h4 {
+  font-size: 3rem;
+}
+.library__collection__list {
+  padding: 0;
+  height: auto;
+  position: relative;
+}
+.library__collection__list h4 {
+  position: absolute;
+  top: 0;
+  padding: 2rem 4rem;
 }/*# sourceMappingURL=main.css.map */
