@@ -1,0 +1,22 @@
+.btn {
+  padding: 1rem 2rem;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.btn.primary {
+  color: $clr-light-primary;
+  background-color: $clr-dark-accent;
+  &:hover {
+    background-color: lighten($clr-dark-accent, 20);
+  }
+}
+
+.btn.outline {
+  color: $clr-dark-accent;
+  &:hover {
+    border: 1px solid $clr-dark-accent;
+  }
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;600;700;900&family=Nunito+Sans:wght@400;700;900&display=swap");
+
+$clr-light-primary: #ffffff;
+$clr-light-accent: #f3f2fc;
+$clr-light-gray: #f6f6eb;
+$clr-dark-primary: #11284b;
+$clr-dark-accent: #381fd1;
+$clr-dark-gray: #4b4b4e;
+
+$ff-primary: "Hanken Grotesk", sans-serif;
+$ff-secondary: "Arial", helvetica sans-serif;
+
+$shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.06);
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 48rem,
+  "md": 72rem,
+  "lg": 96rem,
+  "xl": 120rem,
+);
+
+$mobile: 480px;
+$tablet: 72rem;
+$desktop: 96rem;
+
+$grid-cols: 13;
+$grid-gap: 1rem;
